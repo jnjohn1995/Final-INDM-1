@@ -418,7 +418,7 @@ This table is a partial replication of the table produced by MG on page 1254 of 
 #industry_returns_final() -> r_df
 #stock_returns_final() -> ardvark
 #table1() -> t1
-data(t1)
+load("~/Final-INDM/data/t1.RData")
 print(xtable(t1, caption = 'Summary Statistics for the Top 20 industries by Average Fraction of Market Cap', digets = 3), caption.placement = "top", comment = F)
 ```
 ###3 Results
@@ -439,7 +439,7 @@ Table 2 is a partial replication of the table 2 in MG's paper which was found on
 #colnames(t2) <- c("1,1", "6,6")
 #t2 <- as.table(t2)
 
-data(t2)
+load("~/Final-INDM/data/t2.RData")
 print(xtable(t2, caption = 'Mean Returns for our four basic portfolios', digits = 4), caption.placement = "top", comment = F)
 
 ```
@@ -499,7 +499,7 @@ This table includes the returns for 8 portfolios, high Priced Stocks, high price
 # t2 <- as.table(t2)
 # t2 -> t3
 
-data(t3)
+load("~/Final-INDM/data/t3.RData")
 print(xtable(t3, caption = 'Mean returns for industry and stock momentum portfolios split by price', digits = 4), caption.placement = "top", comment = F)
 ```
 The following graphs show the cumulative returns over our aprox 120 month period of our Industry (1,1) portfolio, our industry (6,6) portfolio, our stock (1,1) portfolio, and our stock (6,6) portfoli. 
@@ -533,10 +533,10 @@ The following graphs show the cumulative returns over our aprox 120 month period
 # mutate(df1, cum_ret = cumprod(1+stock_diffs_6) - 1) -> df1
 # df1 -> cum_ret_df_s6
 
-data(cum_ret_df_i1)
-data(cum_ret_df_i6.RData)
-data(cum_ret_df_s1.RData)
-data(cum_ret_df_s6.RData)
+load("~/Final-INDM/data/cum_ret_df_i1.RData")
+load("~/Final-INDM/data/cum_ret_df_i6.RData")
+load("~/Final-INDM/data/cum_ret_df_s1.RData")
+load("~/Final-INDM/data/cum_ret_df_s6.RData")
   ggplot(data = cum_ret_df_i1, aes(Date, cum_ret)) + geom_line(color = "black") +
   geom_line(data = cum_ret_df_i6, aes(Date, cum_ret), color = "green") +
   geom_line(data = cum_ret_df_s1, aes(Date, cum_ret), color = "blue") +
