@@ -551,7 +551,7 @@ load("~/Final-INDM/data/cum_ret_df_s6.RData")
   geom_line(aes(color="Stock 6,6"))+
   theme(legend.title = element_text(colour="black", size=16, face="bold"))+
   scale_color_discrete(name="Legend") +
-  scale_x_discrete(breaks=c("0","25","50","75","100"),labels=c("kane","Jan. 2000","Feb. 2003","Mar. 2005","Apr. 2007"))
+  scale_x_discrete(breaks=c("0","25","50","75","100"),labels=c("kane","Jan. 2000","Feb. 2002","Mar. 2004","Apr. 2006"))
 
 ```
   
