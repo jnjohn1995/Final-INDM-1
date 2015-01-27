@@ -9,3 +9,10 @@ Description: Replicate MG's Paper
 License: Free
 LazyData: FALSE
 LazyLoad: no
+Imports:
+    dplyr,
+    ws.data,
+    lubridate,
+    ggplot2,
+    tidyr,
+    xtable
