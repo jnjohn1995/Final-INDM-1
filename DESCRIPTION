@@ -1,0 +1,11 @@
+Package: INDM
+Type: Package
+Title: Industry Momentum Calculator
+Version: 0.1
+Date: 2015-01-27
+Author: Johnson Nei and Reed Sawyers
+Maintainer: <jrs9@williams.edu> and <jn2@williams.edu>
+Description: Replicate MG's Paper
+License: Free
+LazyData: FALSE
+LazyLoad: no
